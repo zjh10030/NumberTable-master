@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:stretchColumns="1"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+
+    <TableRow>
+        <TextView
+            android:id="@+id/range"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Range"
+            android:textSize="24sp"
+            />
+        <EditText
+            android:id="@+id/min"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:imeOptions="actionDone"
+            android:inputType="textNoSuggestions|textVisiblePassword"
+            android:hint="MIN"
+            android:textSize="24sp"
+            />
+        <TextView
+            android:id="@+id/to"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="to"
+            android:textSize="24sp"
+            />
+        <EditText
+            android:id="@+id/max"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:imeOptions="actionDone"
+            android:inputType="textNoSuggestions|textVisiblePassword"
+            android:hint="MAX"
+            android:textSize="24sp"/>
+        <Button
+            android:id="@+id/Submit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Submit"
+            android:textSize="24sp"
+            android:onClick="Submit"
+            />
+
+    </TableRow>
+
+    <TableRow>
+
+        <TextView
+            android:id="@+id/Columns"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Columns: "
+            android:textSize="24sp"
+            />
+        <CheckBox android:id="@+id/checkbox_nPowerOf2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="n^2"
+            android:textSize="24sp"
+            android:onClick="onCheckboxClicked"/>
+
+        <CheckBox android:id="@+id/checkbox_nPowerOf3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="n^3"
+            android:textSize="24sp"
+            android:onClick="onCheckboxClicked"/>
+
+        <CheckBox android:id="@+id/checkbox_nSquared"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="√n"
+            android:textSize="24sp"
+            android:onClick="onCheckboxClicked"/>
+
+        <CheckBox android:id="@+id/checkbox_nFactorial"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="n!"
+            android:textSize="24sp"
+            android:onClick="onCheckboxClicked"/>
+
+
+
+    </TableRow>
+
+
+</TableLayout>
+
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:stretchColumns="1"
+tools:context=".MainActivity"
+android:orientation="vertical"
+android:id="@+id/table">
+
+</TableLayout>
