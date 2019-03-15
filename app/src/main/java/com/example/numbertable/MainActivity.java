@@ -80,9 +80,8 @@ public class MainActivity extends AppCompatActivity {
 
             table.addView(output);
         }
-
-
-
+        // Scroll View isn't working from some reason so this is a version without it
+        // I think it's a syntax error will keep working on it to fix it.
     }
 
     private void thingWentWrong (){
